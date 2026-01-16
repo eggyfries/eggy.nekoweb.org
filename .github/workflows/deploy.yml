@@ -16,5 +16,5 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'eggy.nekoweb.com'
           nekoweb-username: 'eggy.nekoweb.com'
-          directory: '/eggy.nekoweb.com'
+          directory: 'public'
 
