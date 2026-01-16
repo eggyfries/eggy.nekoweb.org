@@ -6,7 +6,7 @@
 			body {
 			font-family: 'lato', Arial, sans-serif;
 			font-size:14px;
-			background-image: url(../public/graphics/website-background.png);
+			background-image: url(../graphics/website-background.png);
 			background-size: 96px;
 			background-color: #121212;
 			display: flex;
