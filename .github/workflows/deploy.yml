@@ -1,7 +1,7 @@
 name: Deploy to Nekoweb
   # You may pin to the exact commit or the version.
   # uses: mp-pinheiro/nekoweb-deploy@88b0da577834d4f4f717af9a3007a5d0b2d33df4
-  uses: mp-pinheiro/nekoweb-deploy@0.2.8
+uses: mp-pinheiro/nekoweb-deploy@0.2.8 
   with:
     # API key for Nekoweb
     API_KEY: a3258159f8c70fd1ecbfe529bdfd3bb588343c4127c519a38e62eb96e8122693
