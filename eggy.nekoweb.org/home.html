@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="//fonts.googleapis.com/css?family=Megrim%7CLato"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/x-icon" href="favicon.gif" />
+		<title>> eggy.nekoweb.org</title>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript">
+			// <![CDATA[
+			var speed=125; // speed of wobbling, lower is faster
+			var height=2; // height of wobbling in pixels
+			var alink=""; // page to link text to (set to ="" for no link)
+
+			/****************************
+			*    Wobbly Text Effect     *
+			*(c) 2003-6 mf2fm web-design*
+			*  http://www.mf2fm.com/rv  *
+			* DON'T EDIT BELOW THIS BOX *
+			****************************/
+			var wobtxt, wobble, wobcnt=0;
+			window.onload=function() { if (document.getElementById) {
+			  var i, wobli;
+			  wobble=document.getElementById("wobble");
+			  wobtxt=wobble.firstChild.nodeValue;
+			  while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
+			  for (i=0; i<wobtxt.length; i++) {
+			    wobli=document.createElement("span");
+			    wobli.setAttribute("id", "wobb"+i);
+			    wobli.style.position="relative";
+			    wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+			    if (alink) {
+			      wobli.style.cursor="pointer";
+			      wobli.onclick=function() { top.location.href=alink; }
+			    }
+			    wobble.appendChild(wobli);
+			  }
+			  setInterval("wobbler()", speed);
+			}}
+
+			function wobbler() {
+			  for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
+			  wobcnt++;
+			}
+			// ]]>S
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="sitename">
+					<img
+						src="https://64.media.tumblr.com/1e702b063d7856372b98b24ac16236d0/a6e1b1f4cc313c5d-5e/s75x75_c1/3ae719e4fe7d0a5ffbe0801d9bea3d48fda505ed.gifv"
+						alt="x"
+					/>
+					eggy.nekoweb.org
+					<img
+						src="https://64.media.tumblr.com/1e702b063d7856372b98b24ac16236d0/a6e1b1f4cc313c5d-5e/s75x75_c1/3ae719e4fe7d0a5ffbe0801d9bea3d48fda505ed.gifv"
+						alt="x"
+					/>
+				</div>
+			</div>
+			<div class="quote">
+				<div id="wobble">
+					the desert of the real was overcast by it's map.
+				</div>
+			</div>
+			<div class="layout">
+				<aside class="leftside">
+					<div class="boxtitle">
+						<img
+							src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+							alt="x"
+						/>
+						Navigation
+					</div>
+
+					<div class="navi" onclick="toggleSublinks('menu1')">
+						<img
+							src="https://64.media.tumblr.com/c8227268cf1f0b9a80abea6e6e513501/74cbf2cc22e0d6df-c9/s1280x1920/138a67678260893d70de6a14d32c969662eb2511.gifv"
+							alt="x"
+						/>
+						one
+					</div>
+					<div class="sublinks" id="menu1">
+						<a href="#">Link 1.1</a>
+						<a href="#">Link 1.2</a>
+					</div>
+
+					<div class="navi" onclick="toggleSublinks('menu2')">
+						<img
+							src="https://64.media.tumblr.com/c8227268cf1f0b9a80abea6e6e513501/74cbf2cc22e0d6df-c9/s1280x1920/138a67678260893d70de6a14d32c969662eb2511.gifv"
+							alt="x"
+						/>
+						two
+					</div>
+					<div class="sublinks" id="menu2">
+						<a href="#">Link 2.1</a>
+						<a href="#">Link 2.2</a>
+					</div>
+
+					<div class="navi" onclick="toggleSublinks('menu3')">
+						<img
+							src="https://64.media.tumblr.com/c8227268cf1f0b9a80abea6e6e513501/74cbf2cc22e0d6df-c9/s1280x1920/138a67678260893d70de6a14d32c969662eb2511.gifv"
+							alt="x"
+						/>
+						three
+					</div>
+					<div class="sublinks" id="menu3">
+						<a href="#">Link 3.1</a>
+						<a href="#">Link 3.2</a>
+					</div>
+
+					<div class="navi" onclick="toggleSublinks('menu4')">
+						<img
+							src="https://64.media.tumblr.com/c8227268cf1f0b9a80abea6e6e513501/74cbf2cc22e0d6df-c9/s1280x1920/138a67678260893d70de6a14d32c969662eb2511.gifv"
+							alt="x"
+						/>
+						four
+					</div>
+					<div class="sublinks" id="menu4">
+						<a href="#">Link 4.1</a>
+						<a href="#">Link 4.2</a>
+					</div>
+
+					<div class="boxleft">
+						<div class="boxtitle">
+							<img
+								src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+								alt="x"
+							/>
+							Credits
+						</div>
+
+						<!-- Credit section, do NOT delete this part of the code !! -->
+						<b>Layout:</b>
+						<a
+							href="https://itinerae.blogspot.com/"
+							target="_blank"
+						>
+							Itinerae.
+						</a>
+						<br />
+						<b>Banner</b>
+						<a
+							href="https://i.pinimg.com/originals/a1/b8/97/a1b897ac14b250aedb1c5bf41560b571.gif"
+							target="_blank"
+						>
+							Pinterest.
+						</a>
+						<br />
+					</div>
+					<!-- buttons/blinkies -->
+					<div class="boxleft">
+						<a
+							href="https://carseatheadrest.bandcamp.com/album/twin-fantasy"
+						>
+							<img
+								class="x8831"
+								src="/graphics/twinfantasy.webp"
+							/>
+						</a>
+						<a href="https://nekoweb.org/">
+							<img
+								src="https://nekoweb.org/assets/buttons/button5.gif"
+							/>
+						</a>
+						<!-- button by max.nekoweb.org -->
+					</div>
+				</aside>
+
+				<main class="rightside">
+					<div class="mainbox">
+						<div class="maintitle">welcome! i'm eggy.</div>
+						hi!!! i really suck at web design but i'm pretty good at music stuff. I play bass mainly, but also guitar, keys, etc. 
+					</div>
+
+					<div class="grid">
+						<div class="box">
+							<div class="boxtitle">
+								<img
+									src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+									alt="x"
+								/>
+								a Buttefly
+							</div>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Pellentesque in tempor mauris, nec tincidunt
+							ex. In sed elit tortor. Aenean velit orci, pulvinar
+							non mattis eget, pellentesque in ipsum. Vivamus
+							suscipit volutpat pharetra.
+						</div>
+
+						<div class="box">
+							<div class="boxtitle">
+								<img
+									src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+									alt="x"
+								/>
+								a Bug
+							</div>
+							Vivamus suscipit volutpat pharetra. Maecenas justo
+							turpis, accumsan ac molestie a, malesuada eu risus.
+							Donec ante metus, luctus sit amet iaculis ac,
+							accumsan ut justo.
+						</div>
+
+						<div class="box">
+							<div class="boxtitle">
+								<img
+									src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+									alt="x"
+								/>
+								an Ant
+							</div>
+							Curabitur non magna nec diam vestibulum tristique.
+							Donec pulvinar nisl ac dolor tincidunt scelerisque.
+							Vestibulum laoreet massa non augue pretium, nec
+							imperdiet justo ultrices.
+						</div>
+
+						<div class="box">
+							<div class="boxtitle">
+								<img
+									src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+									alt="x"
+								/>
+								a honeybee
+							</div>
+							Vestibulum laoreet massa non augue pretium, nec
+							imperdiet justo ultrices. Aenean euismod porta
+							augue, at consequat ligula iaculis rhoncus. Maecenas
+							ultricies augue et erat porta sodales. Interdum et
+							malesuada fames ac ante ipsum primis in faucibus.
+						</div>
+
+						<div class="box">
+							<div class="boxtitle">
+								<img
+									src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+									alt="x"
+								/>
+								a Cricket
+							</div>
+							Nullam molestie odio eu tincidunt consectetur.
+							Aliquam sodales nec sem id feugiat. Ut in nisi
+							placerat, iaculis ipsum eu, lacinia orci. Aenean vel
+							massa sit amet elit volutpat rhoncus.
+						</div>
+
+						<div class="box">
+							<div class="boxtitle">
+								<img
+									src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+									alt="x"
+								/>
+								a Cockroach
+							</div>
+							Quisque mollis aliquet urna at blandit. Phasellus
+							elementum congue urna, quis viverra enim hendrerit
+							eget.
+						</div>
+
+						<div class="box">
+							<div class="boxtitle">
+								<img
+									src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+									alt="x"
+								/>
+								a Scorpion
+							</div>
+							In sed elit tortor. Aenean velit orci, pulvinar non
+							mattis eget, pellentesque in ipsum. Vivamus suscipit
+							volutpat pharetra.
+						</div>
+
+						<div class="box">
+							<div class="boxtitle">
+								<img
+									src="https://64.media.tumblr.com/982c3de220a0e2bc093e3c7de962350d/74cbf2cc22e0d6df-a7/s1280x1920/7c23d42b4ee2e8a031742acecd600e192bde2404.gifv"
+									alt="x"
+								/>
+								a Spider
+							</div>
+							Ut in nisi placerat, iaculis ipsum eu, lacinia orci.
+							Aenean vel massa sit amet elit volutpat rhoncus.
+							Proin eget ultrices tellus, sed euismod nunc.
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+		<script>
+			function toggleSublinks(id) {
+			  const submenu = document.getElementById(id);
+			  submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';}
+		</script>
+		<marquee class="annoying">
+			<img
+				style="height: 60px;"
+				src="https://darkosparko.nekoweb.org/visuals/home-page/annoying-dog-car.gif"
+			/>
+		</marquee>
+	</body>
+</html>
