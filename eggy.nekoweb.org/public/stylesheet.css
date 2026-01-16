@@ -101,7 +101,9 @@
 			padding: 8px;
 			text-align: justify;
 			margin-bottom: 8px;
-			border-radius: 4px;}
+			border-radius: 4px;
+			float: center;	}
+			
 
 			.maintitle {
 			color:#001dc4;border-bottom:1px solid #ABEBA5;margin-bottom:4px;padding-top:2px;
