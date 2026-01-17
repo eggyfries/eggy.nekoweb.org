@@ -3,7 +3,7 @@
 			padding: 0;
 			box-sizing: border-box;}
 
-			.body {
+			body {
 			font-family: 'lato', Arial, sans-serif;
 			font-size:14px;
 			background-image: url('graphics/website-background.png');
@@ -30,7 +30,7 @@
 
 			.container {
 			width: 1000px;
-			margin: 5 auto;
+			margin: 10 auto;
 			color: rgb(144, 209, 255);
 			max-width: 95%;
 			background-color: #121212;
