@@ -6,7 +6,7 @@
 			.body {
 			font-family: 'lato', Arial, sans-serif;
 			font-size:14px;
-			background-image: url(graphics/website-background.png);
+			background-image: url('graphics/website-background.png');
 			background-color: #121212;
 			color:#80b8d9;
 			justify-content: center;
@@ -30,7 +30,7 @@
 
 			.container {
 			width: 1000px;
-			margin: 0 auto;
+			margin: 5 auto;
 			color: rgb(144, 209, 255);
 			max-width: 95%;
 			background-color: #121212;
