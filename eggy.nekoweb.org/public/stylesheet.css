@@ -24,7 +24,7 @@
 			text-decoration: none;}
 
 			a:hover {
-			color: #888;text-decoration:underline;}
+			color: #3183ff;text-decoration:underline;}
 
 			b {font-weight:bold;font-style:normal;color:#2a94d1;}
 			i {color:#0042ad;letter-spacing:1px;font-family:monospace;font-size:9px;font-style:normal;font-weight:bold;text-transform:uppercase;letter-spacing:2px;}
@@ -53,11 +53,24 @@
 			background-size: cover;
 			background-position: center;
 			border-bottom: 1px solid #80b8d9;
-			text-align:center;}
+			text-align:center;
+			}
 
 			.sitename {font:36px 'pixelify sans';letter-spacing:3px;text-shadow:1px 1px 3px #000000;border-bottom:0px solid #eee;padding-top:100px;}
 
-			.quote {font:20px 'arial';background: url(https://i.pinimg.com/736x/88/98/fc/8898fcb4515712ba5792c83cbd24df26.jpg);background-position:bottom;letter-spacing: 4px;color:#0042ad;text-align: center; border-bottom:1px solid #80b8d9;height:42px;padding-top:10px;text-shadow:1px 1px 2px #fff;}
+			.quote {
+			font:20px 'arial';
+			background: url(https://i.pinimg.com/736x/88/98/fc/8898fcb4515712ba5792c83cbd24df26.jpg);
+			background-position:bottom;
+			letter-spacing: 4px;
+			color:#0042ad;
+			text-align: center; 
+			border-bottom:1px solid #80b8d9;
+			height:auto;
+			padding-top:10px;
+			padding-bottom: 10px;
+			text-shadow:1px 1px 2px #fff;
+			}
 
 			.layout {
 			display: flex;
@@ -110,7 +123,7 @@
 			
 
 			.maintitle {
-			color:#001dc4;border-bottom:1px solid #ABEBA5;margin-bottom:4px;padding-top:2px;
+			color:#009dc4;border-bottom:1px solid #ABEBA5;margin-bottom:4px;padding-top:2px;
 			letter-spacing:3px;font:15px 'ms gothic', courier new, arial;padding-left:5px;}
 
 			.grid {
@@ -159,8 +172,9 @@
 			}
 			.annoying {
 				width: 100%;
-				position: absolute;
+				position: sticky;
 				z-index: 4;
 				top: 1350px;
+				padding-top: 33vw;
 
 			}
