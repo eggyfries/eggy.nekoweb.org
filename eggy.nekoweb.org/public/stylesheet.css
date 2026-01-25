@@ -56,7 +56,7 @@
 			text-align:center;
 			}
 
-			.sitename {font:36px 'pixelify sans';letter-spacing:3px;text-shadow:1px 1px 3px #000000;border-bottom:0px solid #eee;padding-top:100px;}
+			.sitename {font:36px 'pixelify sans';letter-spacing:3px;text-shadow:1px 1px 3px #000000;border-bottom:0px solid #eee;padding-top: 95px; padding-bottom: 90px;}
 
 			.quote {
 			font:20px 'arial';
