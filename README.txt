@@ -1,4 +1,4 @@
-Hello guys, gals, they, and everyone inbetween! Welcome to the source code for my personal website.
+Hello guys, gals, theys, and everyone inbetween! Welcome to the source code for my personal website.
 
 There's not really much of interest here, at least not yet, and a lot of it is taken from others (with credit ofc).
 However, I have laid out a few general rules/things to expect:
