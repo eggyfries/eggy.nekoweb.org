@@ -43,10 +43,26 @@
 			overflow: hidden;
 			box-shadow: 0px 0px 15px 2px #000000;
 			float: center;
-
 			letter-spacing:1px;
 			text-shadow:0px 0px 1px;
 			}
+
+			.leftlist {
+			position:absolute;
+			height:96vh;
+			top: 2vh; 
+			right:63vw;
+			width:35vw;
+			color: rgb(144, 209, 255);
+			background-color: #121212;
+			border-radius: 4px;
+			overflow: hidden;
+			box-shadow: 0px 0px 15px 2px #000000;
+			letter-spacing:1px;
+			text-align: center;
+			text-shadow:0px 0px 1px;
+			}
+
 			.header {
 			width: 100%;
 			height: 220px;

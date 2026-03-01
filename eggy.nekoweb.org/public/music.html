@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="//fonts.googleapis.com/css?family=Megrim%7CLato"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/x-icon" href="/favicon.gif" />
+		<title>> eggy.nekoweb.org</title>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>    
+        <div class="leftlist">
+            this is placeholder text but the music player itself should work. 
+            i'm going to put some of my music here in the future. there should be a few songs already loaded,
+            and eventually i will put some like explanations here for each song or something.
+            <br><br>
+            <a href="#" class="track-link" data-index="0">▶ psyche</a><br>
+            <a href="#" class="track-link" data-index="1">▶ pond</a>
+        </div>
+        <div id="app" style="height:0px; width:30vw; position:absolute; left: 50vw; top:50vh">
+		     <script type="module">
+			import Webamp from "https://unpkg.com/webamp@^2/butterchurn";
+			if (!Webamp.browserIsSupported()) {
+  			alert("Oh no! Webamp does not work!");
+  			throw new Error("What's the point of anything?");}
+			const tracks = [
+				{
+					url: "https://eggy.nekoweb.org/music/psyche.mp3",
+					metaData: {
+						artist: "eggy",
+						title: "psyche",
+					},
+					duration: 147,
+				},
+				{
+					url: "https://eggy.nekoweb.org/music/pond.mp3",
+					metaData: {
+						artist: "eggy",
+						title: "pond",
+					},
+					duration: 192,
+				},
+			];
+			const webamp = new Webamp({
+				initialTracks: tracks,
+				initialSkin: {
+					url: "https://archive.org/download/winampskin_ascii_amp_5x_by_mrd00d/ascii_amp_5x_by_mrd00d.wsz",
+				},
+			});
+			webamp.renderWhenReady(document.getElementById("app")).then(() => {
+			    window.playWebampTrack = (index) => {
+				webamp._store.dispatch({ type: "PLAY_TRACK", id: index });
+				webamp._store.dispatch({ type: "PLAY" });
+			    };
+			});
+			document.querySelectorAll(".track-link").forEach((link) => {
+				link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const index = parseInt(link.dataset.index, 10);
+                if (window.playWebampTrack) {
+                    window.playWebampTrack(index);
+                }
+                });
+			});
+		    </script>
+        </div>
+	</body>
